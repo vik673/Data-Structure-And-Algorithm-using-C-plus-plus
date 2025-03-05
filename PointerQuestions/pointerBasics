@@ -1,0 +1,17 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    int a =10;
+    int *p = &a; // p is a pointer to a integer
+    int **pp = &p; // Pp is pointer to a pointer to an integer
+    int *arr[10]; // arr is an array of 10 pointer to integers.
+
+    cout << "Value of a: " << a << endl;
+    cout << "Value pointed by p: " << *p << endl;
+    cout<< "Value pointet by pp: " << **pp   << endl;
+
+   return 0;
+}
