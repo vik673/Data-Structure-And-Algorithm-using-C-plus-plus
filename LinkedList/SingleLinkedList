@@ -121,6 +121,21 @@ Node* deleteFromSpecificPos(Node* head, int pos)
     return head;
 }
 
+// Function to search for a key in the linked list
+bool searchKey(struct Node *head, int key)
+{
+    struct Node *curr = head;
+
+    while (curr != NULL)
+    {
+        if (curr->data == key)
+            return true;
+        curr = curr->next;
+    }
+
+    return false;
+}
+
 Node* reverseLinkedList(Node* head)
 {
     Node* curr = head;
