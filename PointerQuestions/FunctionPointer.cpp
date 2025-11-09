@@ -1,6 +1,8 @@
 #include<iostream>
 
-
+//int (*funcPtr)(int,int) = add;
+// it means that functptr is a pointer to the function which tackes two argument and return integer.
+// add is function which is assigned to it.
 using namespace std;
 
 int add(int a, int b)
