@@ -15,13 +15,15 @@ int subtract(int a, int b)
 
 int main()
 {
-    int (*funcPtr)(int,int);
+    int (*funcPtr)(int,int) = add;
 
-    funcPtr = add;
-    cout <<"addition: " << funcPtr(10,20) << endl;
-
-    funcPtr = subtract;
-    cout << "subtraction: " << subtract(20,10) << endl;
+   
+    int result=  funcPtr(10,20);
+    cout <<"addition: " << funcPtr(10,20) << " " << result << endl;
+    
+    funcPtr = &subtract;
+    result=  funcPtr(10,20);
+    cout << "subtraction: " << funcPtr(20,10) <<" " << result << endl;
 
     return 0;
 }
