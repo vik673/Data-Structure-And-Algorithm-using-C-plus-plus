@@ -19,7 +19,7 @@ int getSecondLargest(vector<int>& arr)
              third = second;
             second = arr[i];
         }
-        else if(arr[i]<second && arr[i]>first)
+        else if(arr[i]<second && arr[i]>third)
         {
             third = arr[i];
         }
